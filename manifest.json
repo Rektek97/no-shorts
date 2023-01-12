@@ -1,7 +1,7 @@
 {
-    "name": "No Shorts",
-    "version": "1.0",
-    "description": "Removes the element in the side menu of youtube.com",
+    "name": "Take my Shorts, I want the Trends",
+    "version": "2.0",
+    "description": "Replaces the element in the side menu of youtube.com with the Trends button which gets more and more hidden by Youtube.",
     "permissions": ["tabs"],
     "host_permissions": ["https://*.youtube.com/*"],
     "content_scripts": [

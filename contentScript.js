@@ -18,7 +18,9 @@ function waitForElm(selector) {
     });
 }
 
-waitForElm('[title="Shorts"]').then((elm) => {
-    console.log('Element is ready');
-    elm.parentElement.removeChild(elm);
+waitForElm('[title="Trends"]').then((elm) => {  // just wait for one of the elements to load
+    container = document.getElementById("guide-renderer")
+    shorts = container.querySelector('[title="Shorts"]');
+    trends = container.querySelector('[title="Trends"]');
+    shorts.parentElement.replaceChild(trends, shorts);
 });
